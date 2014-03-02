@@ -1,17 +1,93 @@
-h1 {
-  // font-family: 'Open Sans', sans-serif;
-  font-weight: 900;
-  letter-spacing: 0.03em;
+nav {
+  #logo {
+    font-family: "Alex Brush", sans-serif;
+    font-size: 32px;
+    // font-weight: 700;
+    letter-spacing: 0.04em;
+  }
 }
 
 header {
   background: url("/assets/kyle-in-rwanda-sm.jpg") no-repeat 0% 45%;
   height: 622px;
   overflow: hidden;
+  // text-align: center;
+  h1 {
+    font-weight: 600;
+    font-size: 260px;
+    margin-top: 0px;
+    margin-left: 200px;
+    color: white;
+    // font-family: "Open Sans";
+    // position: absolute;
+    // top: 180px;
+    // left: 305px;
+  }
+  #rw-wrapper {
+    width: 90%;
+    position: relative;
+    margin: 230px auto 0 auto;
+    padding: 10px;
+    h2 {
+      color: white;
+      font-size: 80px;
+      font-weight: 800; 
+      text-align: left;
+      .rw-words {
+        display: inline;
+        text-indent: 20px;
+        span {
+          position: absolute;
+          opacity: 0;
+          overflow: hidden;
+          width: 100%;
+          color: #e9cf84;
+          animation: rotateWords 15s linear infinite 0s;
+          -webkit-animation: rotateWords 15s linear infinite 0s;
+          &:nth-child(2) {
+            -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+          }
+          &:nth-child(3) {
+            -webkit-animation-delay: 6s;
+            animation-delay: 6s;
+          }
+          &:nth-child(4) {
+            -webkit-animation-delay: 9s;
+            animation-delay: 9s;
+          }
+          &:nth-child(5) {
+            -webkit-animation-delay: 12s;
+            animation-delay: 12s;
+          }
+        }
+      }
+    }
+  }
+}
+
+@-webkit-keyframes rotateWords {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+  5% { opacity: 1; -webkit-transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); }
+  20% { opacity: 0; -webkit-transform: translateY(30px); }
+  80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes rotateWords {
+    0% { opacity: 0; }
+    2% { opacity: 0; transform: translateY(-30px); }
+  5% { opacity: 1; transform: translateY(0px);}
+    17% { opacity: 1; transform: translateY(0px); }
+  20% { opacity: 0; transform: translateY(30px); }
+  80% { opacity: 0; }
+    100% { opacity: 0; }
 }
 
 #dark-layer {
-  // background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.55);
   position: absolute;
   top: 60px;
   left: 0;
