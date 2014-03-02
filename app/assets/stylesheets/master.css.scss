@@ -1,0 +1,21 @@
+h1 {
+  // font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+}
+
+header {
+  background: url("/assets/kyle-in-rwanda-sm.jpg") no-repeat 0% 45%;
+  height: 622px;
+  overflow: hidden;
+}
+
+#dark-layer {
+  // background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 622px;
+  overflow: hidden;
+}
