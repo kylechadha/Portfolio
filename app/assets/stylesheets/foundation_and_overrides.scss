@@ -1060,8 +1060,8 @@ $body-font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans
 // $include-html-tabs-classes: $include-html-classes;
 
 // $tabs-navigation-padding: rem-calc(16);
-// $tabs-navigation-bg-color: #efefef  ;
-// $tabs-navigation-active-bg-color: #fff;
+$tabs-navigation-bg-color: #e9cf84  ;
+$tabs-navigation-active-bg-color: lighten(#e9cf84, 15%);
 // $tabs-navigation-hover-bg-color: scale-color($tabs-navigation-bg-color, $lightness: -6%);
 // $tabs-navigation-font-color: #222;
 // $tabs-navigation-font-size: rem-calc(16);
@@ -1148,7 +1148,7 @@ $topbar-title-font-size: rem-calc(25);
 // $topbar-link-color-hover: #fff;
 // $topbar-link-color-active: #fff;
 // $topbar-link-color-active-hover: #fff;
-// $topbar-link-weight: normal;
+$topbar-link-weight: normal;
 $topbar-link-font-size: rem-calc(15);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg-hover: #272727  ;

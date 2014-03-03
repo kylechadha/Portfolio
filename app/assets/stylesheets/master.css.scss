@@ -45,20 +45,20 @@ header {
           animation: rotateWords 15s linear infinite 0s;
           -webkit-animation: rotateWords 15s linear infinite 0s;
           &:nth-child(2) {
-            -webkit-animation-delay: 3s;
-            animation-delay: 3s;
+            -webkit-animation-delay: 2.4s;
+            animation-delay: 2.4s;
           }
           &:nth-child(3) {
-            -webkit-animation-delay: 6s;
-            animation-delay: 6s;
+            -webkit-animation-delay: 4.8s;
+            animation-delay: 4.8s;
           }
           &:nth-child(4) {
-            -webkit-animation-delay: 9s;
-            animation-delay: 9s;
+            -webkit-animation-delay: 7.2s;
+            animation-delay: 7.2s;
           }
           &:nth-child(5) {
-            -webkit-animation-delay: 12s;
-            animation-delay: 12s;
+            -webkit-animation-delay: 9.6s;
+            animation-delay: 9.6s;
           }
         }
       }
@@ -67,23 +67,23 @@ header {
 }
 
 @-webkit-keyframes rotateWords {
-    0% { opacity: 0; }
-    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+  0% { opacity: 0; }
+  2% { opacity: 0; -webkit-transform: translateY(-30px); }
   5% { opacity: 1; -webkit-transform: translateY(0px);}
-    17% { opacity: 1; -webkit-transform: translateY(0px); }
+  17% { opacity: 1; -webkit-transform: translateY(0px); }
   20% { opacity: 0; -webkit-transform: translateY(30px); }
   80% { opacity: 0; }
-    100% { opacity: 0; }
+  100% { opacity: 0; }
 }
 
 @keyframes rotateWords {
-    0% { opacity: 0; }
-    2% { opacity: 0; transform: translateY(-30px); }
+  0% { opacity: 0; }
+  2% { opacity: 0; transform: translateY(-30px); }
   5% { opacity: 1; transform: translateY(0px);}
-    17% { opacity: 1; transform: translateY(0px); }
+  17% { opacity: 1; transform: translateY(0px); }
   20% { opacity: 0; transform: translateY(30px); }
   80% { opacity: 0; }
-    100% { opacity: 0; }
+  100% { opacity: 0; }
 }
 
 #dark-layer {
@@ -94,4 +94,34 @@ header {
   width: 100%;
   height: 622px;
   overflow: hidden;
+}
+
+.kc-box {
+  margin-top: 25px;
+  padding: 25px 0;
+  padding-bottom: 50px;
+  h1 {
+    font-weight: 700;
+  }
+}
+
+#portfolio {
+}
+
+.about-me {
+  background-color: #333;
+  h1 {
+    color: white;
+  }
+  img {
+    border: solid 10px white;
+  }
+}
+
+.skills {
+
+}
+
+.contact {
+  background-color: #e9cf84;
 }
