@@ -23,7 +23,6 @@ group :development do
   gem 'pry'
 end
 
-
 # Predefined Stuff______________________________________________________________
 
 # Use Uglifier as compressor for JavaScript assets
