@@ -102,6 +102,7 @@ header {
   padding-bottom: 50px;
   h1 {
     font-weight: 700;
+    font-size: 46px;
   }
 }
 
@@ -125,4 +126,28 @@ header {
 
 #contact {
   background-color: #e9cf84;
+  padding-bottom: 25px;
+  h1 {
+    margin: 10px;
+    padding: 0;
+  }
+  #contact-address {
+    padding: 10px;
+    h1 {
+      margin: 0;
+      padding: 0;
+      font-size: 22px;
+      // color: white;
+    }
+    h2 {
+      margin: 0;
+      padding: 0;      
+      font-size: 18px;
+    }
+  }
+  .contact-icon {
+    margin: 0 20px;
+    margin-top: 20px;
+    // color: white;
+  }
 }
