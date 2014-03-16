@@ -24,14 +24,7 @@
   </div>
   <div class="row">
     <div class="columns large-12 wrapper">
-      <dl class="tabs vertical" data-tab>
-        <dd class="active"><a href="#panel1a">Spades</a></dd>
-        <dd><a href="#panel2a">Tic Tac Tangular</a></dd>
-        <dd><a href="#panel3a">QApp</a></dd>
-        <dd><a href="#panel4a">Drink Responsibly</a></dd>
-        <dd><a href="#panel4a">Transit Buzz</a></dd>
-      </dl>
-      <div class="tabs-content vertical">
+      <div class="tabs-content horizontal">
         <div class="content active" id="panel1a">
           <p>Panel 1 content goes here.</p>
         </div>
@@ -44,7 +37,22 @@
         <div class="content" id="panel4a">
           <p>Panel 4 content goes here.</p>
         </div>
+        <div class="content" id="panel5a">
+          <p>Panel 5 content goes here.</p>
+        </div>
+        <div class="content" id="panel6a">
+          <p>Panel 6 content goes here.</p>
+        </div>
       </div>
+      <dl class="tabs horizontal" data-tab>
+        <dd class="active"><a href="#panel1a">Transit Alarm</a></dd>
+        <dd><a href="#panel2a">Spades</a></dd>
+        <dd><a href="#panel3a">Drink Responsibly</a></dd>
+        <dd><a href="#panel5a">QApp</a></dd>
+        <dd><a href="#panel6a">TGenerator</a></dd>
+        <dd><a href="#panel4a">Tic Tac Tangular</a></dd>
+        <dd><a href="#panel6a">My Portfolio</a></dd>
+      </dl>
     </div>
     <div class="columns large-2"></div>
   </div>
@@ -59,10 +67,16 @@
       <%= image_tag "kyle-chadha-1.jpg", size: '300' %>
     </div>
     <div class="columns large-8">
-      <h3>Hey there, I'm Kyle. I'm a <strong>full-stack developer</strong> with a background in management consulting.</h3><br>
-      <h5>Yup, that's right. I studied business, spent years toiling long hours on the 34th floor of who knows what building, and then left it all to explore some of the finer things life has to offer. I spent several months traveling, worked with the Clinton Foundation in Rwanda, and then started two startups.</h5><br>
+      <h2>Hey there, I'm Kyle. I'm a <strong>full-stack developer</strong> with a background in management consulting.</h2><br>
+      <%#= fa_icon "html5 4x" %>
+      <%#= fa_icon "css3 4x" %>
+
+      <%#= image_tag "languages.png", size: "80", id: "html5" %>
+      <%#= image_tag "languages.png", size: "80", id: "css3" %>
+      <%#= image_tag "languages.png", size: "80", id: "javascript" %>
+<!--       <h5>Yup, that's right. I studied business, spent years toiling long hours on the 34th floor of who knows what building, and then left it all to explore some of the finer things life has to offer. I spent several months traveling, worked with the Clinton Foundation in Rwanda, and then started two startups.</h5><br>
       <h5>I did a lot of random things from selling to setting up partnerships to working with government officials... but of all the things I did I kept coming back to one fact: the more I had to deal with code, the more hooked I became.</h5><br>
-      <h5>I started General Assembly's course in January, and the rest is history. I'm a code junkie, and there's no denying it. My goal for the next few years is to eat, live, breathe, and sleep code... and do it with some awesome people who love the art as much as I do.</h5>
+      <h5>I started General Assembly's course in January, and the rest is history. I'm a code junkie, and there's no denying it. My goal for the next few years is to eat, live, breathe, and sleep code... and do it with some awesome people who love the art as much as I do.</h5> -->
     </div>
   </div>
 </div>

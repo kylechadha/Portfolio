@@ -114,16 +114,26 @@ a {
 }
 
 #work {
+  a {
+    padding-left: 1.65rem;
+    padding-right: 1.65rem;
+  }
 }
 
 #about-me {
   background-color: #333;
   color: white;
-  h1, h3, h5 {
+  h1, h2, h3 {
     color: white;
+  }
+  h2 {
+    font-size: 27px;
   }
   img {
     border: solid 10px white;
+  }
+  .stack {
+    border: none;
   }
 }
 
