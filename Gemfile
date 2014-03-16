@@ -6,11 +6,12 @@ gem 'rails', '4.0.2'
 # Database: PostgreSQL
 gem 'pg'
 
-# Styles: SCSS & Foundation
+# Styles: SCSS, Foundation, Font Awesome Icons
 gem 'sass-rails', '~> 4.0.0'
 gem 'foundation-rails'
+gem 'font-awesome-rails'
 
-# Testing Tools: Rspec
+# Testing: Rspec
 group :test do
   gem 'rspec-rails'
 end
