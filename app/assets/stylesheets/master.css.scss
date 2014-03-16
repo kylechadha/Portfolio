@@ -86,6 +86,13 @@ header {
   100% { opacity: 0; }
 }
 
+a {
+  color: #222;
+  &:hover {
+    color: scale-color(#222, $lightness: -25%);
+  }
+}
+
 #dark-layer {
   background-color: rgba(0, 0, 0, 0.55);
   position: absolute;
@@ -126,28 +133,41 @@ header {
 
 #contact {
   background-color: #e9cf84;
-  padding-bottom: 25px;
+  padding-bottom: 40px;
   h1 {
     margin: 10px;
     padding: 0;
   }
+  span {
+    margin: 20px;
+    margin-top: 20px;
+    padding: 20px 0;
+  }
   #contact-address {
     padding: 10px;
+    margin-bottom: 20px;
     h1 {
       margin: 0;
       padding: 0;
       font-size: 22px;
-      // color: white;
+      color: white;
+      letter-spacing: 1px;
+      font-weight: 700;
     }
     h2 {
+      // color: scale-color(#222, $lightness: 25%);
       margin: 0;
       padding: 0;      
       font-size: 18px;
     }
   }
-  .contact-icon {
-    margin: 0 20px;
-    margin-top: 20px;
-    // color: white;
+  #contact-icons {
+    .contact-icon {
+      color: #222;
+      &:hover {
+        color: white;
+        // color: scale-color(#222, $lightness: -25%);
+      }
+    }
   }
 }

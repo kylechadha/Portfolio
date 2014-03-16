@@ -85,13 +85,17 @@
     <h2>8601 Pacific Coast Hwy</h2>
     <h2>Los Angeles, CA 90045</h2>
   </div>
-  <div class="row">
+  <div id="contact-icons" class="row">
     <div class="columns large-8 large-offset-2 text-center">
-      <%= fa_icon "envelope 3x", class: "contact-icon" %>
-      <%= fa_icon "phone-square 3x", class: "contact-icon" %>
-      <%= fa_icon "linkedin-square 3x", class: "contact-icon" %>
-      <%= fa_icon "github-square 3x", class: "contact-icon" %>
-      <%= fa_icon "twitter-square 3x", class: "contact-icon" %>
+      <span data-tooltip data-options="disable_for_touch:true" class="has-tip tip-top" title="kyle.chadha@gmail.com"><a target="_blank" href="mailto:kyle.chadha@gmail.com?Subject=Hello%20again"><%= fa_icon "envelope 3x", class: "contact-icon" %></a></span>
+
+      <span data-tooltip data-options="disable_for_touch:true" class="has-tip tip-top" title="LinkedIn"><a target="_blank" href="https://www.linkedin.com/in/kylechadha/"><%= fa_icon "linkedin-square 3x", class: "contact-icon" %></a></span>
+
+      <span data-tooltip data-options="disable_for_touch:true" class="has-tip tip-top" title="GitHub"><a target="_blank" href="https://github.com/kylechadha"><%= fa_icon "github-square 3x", class: "contact-icon" %></a></span>
+
+      <span data-tooltip data-options="disable_for_touch:true" class="has-tip tip-top" title="858-2CHADHA ...not kidding. Or am I?"><%= fa_icon "phone-square 3x", class: "contact-icon" %></span>
+
+      <span data-tooltip data-options="disable_for_touch:true" class="has-tip tip-top" title="Twitter"><a target="_blank" href="https://twitter.com/kylechadha"><%= fa_icon "twitter-square 3x", class: "contact-icon" %></a></span>
     </div>
   </div>
 </div>

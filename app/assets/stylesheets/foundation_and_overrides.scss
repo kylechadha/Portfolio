@@ -37,7 +37,7 @@
 
 // We use these to control various global styles
 // $body-bg: #fff;
-// $body-font-color: #222;
+$body-font-color: #222;
 $body-font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
@@ -1098,12 +1098,12 @@ $tabs-navigation-active-bg-color: lighten(#e9cf84, 15%);
 // $has-tip-border-bottom: dotted 1px #ccc;
 // $has-tip-font-weight: bold;
 // $has-tip-font-color: #333;
-// $has-tip-border-bottom-hover: dotted 1px scale-color($primary-color, $lightness: -55%);
+$has-tip-border-bottom-hover: none;
 // $has-tip-font-color-hover: $primary-color;
-// $has-tip-cursor-type: help;
+$has-tip-cursor-type: default;
 
-// $tooltip-padding: rem-calc(12);
-// $tooltip-bg: #333;
+$tooltip-padding: rem-calc(12);
+$tooltip-bg: #222;
 // $tooltip-font-size: rem-calc(14);
 // $tooltip-font-weight: normal;
 // $tooltip-font-color: #fff;
