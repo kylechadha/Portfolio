@@ -126,9 +126,38 @@ a {
   }
   .project-image {
     width: 70%;
-    height: 100%;
+    // Can't keep this here!
+    height: 430px;
     float: left;
     border: 10px solid #333;
+    div {
+      position: absolute;
+      img {
+        margin: 5px;
+        padding: 0 7px;
+      }
+    }
+    img {
+      // Only want this to apply to the cell phone ones
+      // margin: 5px;
+      // padding: 0 7px;
+    }
+    .animation {
+      -webkit-animation-name: fade;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-duration: 12s;
+      animation-name: fade;
+      animation-iteration-count: infinite;
+      animation-duration: 12s;
+    }
+    .first {
+      -webkit-animation-delay: -4s;
+      animation-delay: -4s;
+    }
+    .third {
+      -webkit-animation-delay: -8s;
+      animation-delay: -8s;
+    }
   }
   .project-text {
     width: 30%;
@@ -161,6 +190,21 @@ a {
     background-color: #e9cf84;
     padding-bottom: 1px;
   }
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
 }
 
 #about-me {
