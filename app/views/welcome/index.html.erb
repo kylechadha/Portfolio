@@ -3,7 +3,6 @@
 <header>
   <div id="dark-layer">
   <section id="rw-wrapper">
-  <!-- <h1>Hi.</h1> -->
     <h2>
       <span>Hi. I am</span>
       <div class="rw-words">
@@ -26,12 +25,20 @@
     <div class="columns large-12 wrapper">
       <div class="tabs-content horizontal">
         <div class="content active" id="panel1a">
-          <div class="project-image text-center">
-            <div><%= image_tag "transit-alarm-01.jpg", size: "250", class: "animation first" %>
-              <%= image_tag "transit-alarm-02.jpg", size: "250", class: "animation first" %></div>
-            <div><%= image_tag "transit-alarm-03.jpg", size: "250", class: "animation second" %>
-              <%= image_tag "transit-alarm-04.jpg", size: "250", class: "animation second" %></div>
-            <div><%= image_tag "transit-alarm-05.jpg", size: "250", class: "animation third" %></div>
+          <div class="project-image">
+            <div>
+              <!-- <a href="<%#= asset_path 'transit-alarm-01.jpg' %>" class="th"> -->
+                <%= image_tag "transit-alarm-01.jpg", size: "250", class: "animation first" %>
+              <!-- </a> -->
+              <%= image_tag "transit-alarm-02.jpg", size: "250", class: "animation first" %>
+            </div>
+            <div>
+              <%= image_tag "transit-alarm-03.jpg", size: "250", class: "animation second" %>
+              <%= image_tag "transit-alarm-04.jpg", size: "250", class: "animation second" %>
+            </div>
+            <div>
+              <%= image_tag "transit-alarm-05.jpg", size: "250", class: "animation third" %>
+            </div>
           </div>
           <div class="project-text text-center">
             <h2>Transit Alarm</h2>
@@ -40,7 +47,11 @@
           </div>
         </div>
         <div class="content" id="panel2a">
-          <div class="project-image"><%= image_tag "spades-01.jpg" %></div>
+          <div class="project-image">
+            <div><%= image_tag "spades-01.jpg", size: "660", class: "animation first" %></div>
+            <div><%= image_tag "spades-02.jpg", size: "660", class: "animation second" %></div>
+            <div><%= image_tag "spades-04.jpg", size: "660", class: "animation third" %></div>
+          </div>
           <div class="project-text text-center">
             <h2>Spades</h2>
             <h3>A fun app to help coders & designers explore tools for the development process.</h3>
@@ -108,16 +119,17 @@
   </div>
   <div class="row">
     <div class="columns large-4">
-      <%= image_tag "kyle-chadha-1.jpg", size: '300' %>
+      <%= image_tag "kyle-chadha-1.jpg", size: '300', id: "my-picture" %>
     </div>
     <div class="columns large-8">
       <h2>Hey there, I'm Kyle. I'm a <strong>full-stack developer</strong> with a background in management consulting.</h2><br>
-      <%#= fa_icon "html5 4x" %>
-      <%#= fa_icon "css3 4x" %>
 
-      <%#= image_tag "languages.png", size: "80", id: "html5" %>
-      <%#= image_tag "languages.png", size: "80", id: "css3" %>
-      <%#= image_tag "languages.png", size: "80", id: "javascript" %>
+      <%= fa_icon "html5 4x" %>
+      <%= fa_icon "css3 4x" %>
+      <%= image_tag "js-logo.png", size: "70", id: "css3" %>
+      <%= image_tag "rails.png", size: "52", id: "javascript" %>
+      <%= image_tag "angularjs.png", size: "70", id: "html5" %>
+
 <!--       <h5>Yup, that's right. I studied business, spent years toiling long hours on the 34th floor of who knows what building, and then left it all to explore some of the finer things life has to offer. I spent several months traveling, worked with the Clinton Foundation in Rwanda, and then started two startups.</h5><br>
       <h5>I did a lot of random things from selling to setting up partnerships to working with government officials... but of all the things I did I kept coming back to one fact: the more I had to deal with code, the more hooked I became.</h5><br>
       <h5>I started General Assembly's course in January, and the rest is history. I'm a code junkie, and there's no denying it. My goal for the next few years is to eat, live, breathe, and sleep code... and do it with some awesome people who love the art as much as I do.</h5> -->

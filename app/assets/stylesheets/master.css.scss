@@ -1,27 +1,37 @@
+html, body {
+  height: 100%;
+}
+
 nav {
   #logo {
-    font-family: "Alex Brush", sans-serif;
-    font-size: 32px;
-    // font-weight: 700;
-    letter-spacing: 0.04em;
+    font-family: "LinotypeNotec", "Lato", sans-serif;
+    font-size: 36px;
+    margin-top: -2px;    
+    // color: #555;
   }
+}
+
+#dark-layer {
+  background-color: rgba(0, 0, 0, 0.55);
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 header {
   background: url("/assets/kyle-in-rwanda-sm.jpg") no-repeat 0% 45%;
-  height: 622px;
+  // background-size: cover;
+  // On small res, media query out your picture and the CSS transitions.
   overflow: hidden;
-  // text-align: center;
+  height: 100%;
+  padding-top: -55px;
   h1 {
     font-weight: 600;
     font-size: 260px;
     margin-top: 0px;
     margin-left: 200px;
     color: white;
-    // font-family: "Open Sans";
-    // position: absolute;
-    // top: 180px;
-    // left: 305px;
   }
   #rw-wrapper {
     width: 90%;
@@ -93,29 +103,28 @@ a {
   }
 }
 
-#dark-layer {
-  background-color: rgba(0, 0, 0, 0.55);
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  height: 622px;
-  overflow: hidden;
-}
-
 .kc-box {
-  margin-top: 15px;
-  padding: 25px 0;
-  padding-bottom: 50px;
+  // margin-top: 15px;
+  padding: 65px 0;
+  // padding-bottom: 50px;
+  height: 100%;
   h1 {
     font-weight: 700;
     font-size: 46px;
     margin-bottom: 30px;
-    margin-top: 10px;
+    margin: 25px 0;
+    // margin-top: 10px;
+    // margin: 0;
+    // padding: 0;
   }
 }
 
 #projects {
+  overflow: auto;
+  .wrapper {
+    height: 80%;
+    padding-bottom: 25px;
+  }
   a {
     padding-left: 1.65rem;
     padding-right: 1.65rem;
@@ -216,7 +225,7 @@ a {
   h2 {
     font-size: 27px;
   }
-  img {
+  #my-picture {
     border: solid 10px white;
   }
   .stack {
